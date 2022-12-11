@@ -4,8 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.Duration;
-
+import java.util.Properties;
 
 
 public class ShondalandPage {
@@ -99,5 +102,18 @@ public class ShondalandPage {
         Util.waiter(3);
         fillEmailAndClickLogin(email);
         Util.waiter(3);
+    }
+
+    public Properties connectPropertiesClass() throws FileNotFoundException, IOException {
+        Properties p = null;
+        try {
+            FileReader reader = new FileReader("src/main/resources/db.properties");
+            p = new Properties();
+            p.load(reader);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            return p;
+        }
     }
 }

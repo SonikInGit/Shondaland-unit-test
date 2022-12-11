@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="963ee60f-c65b-42ba-88b3-9ebff80dd50d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ShondalandPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ShondalandPageSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShondalandSearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShondalandTest.java" afterDir="false" />
+    <list default="true" id="963ee60f-c65b-42ba-88b3-9ebff80dd50d" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShondalandPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShondalandPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ShondalandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShondalandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +37,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ShondalandSearchTest.testShondalandSearch">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\svrog\IdeaProjects\Shondaland-unit-test\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ShondalandTest.testShondalandLoginPageAndFillCorrectPassword">
     <configuration name="ShondalandSearchTest.testShondalandSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Shondaland-unit-test" />
       <option name="PACKAGE_NAME" value="" />
@@ -59,11 +59,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShondalandTest.testShondalandLoginPageAndFillEmptyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShondalandTest.testShondalandLoginPageAndFillCorrectPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Shondaland-unit-test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShondalandTest" />
-      <option name="METHOD_NAME" value="testShondalandLoginPageAndFillEmptyPassword" />
+      <option name="METHOD_NAME" value="testShondalandLoginPageAndFillCorrectPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShondalandTest.testShondalandLoginPageAndFillCorrectPassword" />
         <item itemvalue="JUnit.ShondalandSearchTest.testShondalandSearch" />
         <item itemvalue="JUnit.ShondalandTest.testShondalandLoginPageAndFillСorrectPassword" />
         <item itemvalue="JUnit.ShondalandTest.testShondalandLoginPageInvalidEmailFilled" />
         <item itemvalue="JUnit.ShondalandTest.testShondalandLoginPageValidEmailFilled" />
-        <item itemvalue="JUnit.ShondalandTest.testShondalandLoginPageAndFillEmptyPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -118,6 +118,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670678659135</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1670753370979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670753370979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,5 +138,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

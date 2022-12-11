@@ -6,6 +6,10 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.*;
+
 
 public class ShondalandTest {
 
@@ -53,27 +57,27 @@ public class ShondalandTest {
     }
 
     @Test
-    public void testShondalandLoginPageInvalidEmailFilled() {
+    public void testShondalandLoginPageInvalidEmailFilled() throws FileNotFoundException, IOException{
         // TODO GIVEN
-
+        Properties data = page.connectPropertiesClass();
         page.clickGoToLoginPageButton();
 
         // TODO WHEN
 
-        page.fillEmailAndClickLogin("wwdwdfre1@mail");
+        page.fillEmailAndClickLogin(data.getProperty("invalidemail"));
         String actualErrorMessageEmail = page.getResultMessageOfIncorrectEmail();
 
         // TODO THEN
         Assert.assertEquals(page.ERROR_MESSAGE_INVALID_EMAIL, actualErrorMessageEmail);
     }
     @Test
-    public void testShondalandLoginPageValidEmailFilled() {
+    public void testShondalandLoginPageValidEmailFilled() throws FileNotFoundException, IOException{
         // TODO GIVEN
-
+        Properties data = page.connectPropertiesClass();
         page.clickGoToLoginPageButton();
 
         //TODO WHEN
-        page.fillEmailAndClickLogin("fsc.rogalevi@gmail.com");
+        page.fillEmailAndClickLogin(data.getProperty("user2"));
         String actual= page.getResultMessageOfEmptyPassword();
 
         //TODO THEN
@@ -81,14 +85,14 @@ public class ShondalandTest {
     }
 
     @Test
-    public void testShondalandLoginPageAndFillEmptyPassword() {
+    public void testShondalandLoginPageAndFillEmptyPassword() throws FileNotFoundException, IOException{
         // TODO GIVEN
-
+        Properties data = page.connectPropertiesClass();
         page.clickGoToLoginPageButton();
 
 
         //TODO WHEN
-        page.fillEmailAndClickLogin("fsc.rogalevi@gmail.com");
+        page.fillEmailAndClickLogin(data.getProperty("user2"));
         String actual= page.getResultMessageOfEmptyPassword();
 
         //TODO THEN
@@ -96,13 +100,13 @@ public class ShondalandTest {
     }
 
     @Test
-    public void testShondalandLoginPageAndFillIncorrectPassword() {
+    public void testShondalandLoginPageAndFillIncorrectPassword() throws FileNotFoundException, IOException{
         // TODO GIVEN
-
+        Properties data = page.connectPropertiesClass();
         page.clickGoToLoginPageButton();
 
         //TODO WHEN
-        page.fillLoginInfo("sophi.rogalevich@gmail.com", "njcnde8a_Ki2");
+        page.fillLoginInfo(data.getProperty("user"), data.getProperty("invalidpassword"));
         String actual = page.getResultMessageOfIncorrectPassword();
 
         //TODO THEN
@@ -110,13 +114,13 @@ public class ShondalandTest {
     }
 
     @Test
-    public void testShondalandLoginPageAndFillCorrectPassword() {
+    public void testShondalandLoginPageAndFillCorrectPassword() throws FileNotFoundException, IOException {
         // TODO GIVEN
-
+        Properties data = page.connectPropertiesClass();
         page.clickGoToLoginPageButton();
 
         //TODO WHEN
-        page.fillLoginInfo("sophi.rogalevich@gmail.com", "14.09-AR");
+        page.fillLoginInfo(data.getProperty("user"), data.getProperty("password"));
         Util.waiter(3);
         String actual = page.getResultTextAfterValidLogin();
 
